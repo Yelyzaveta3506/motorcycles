@@ -1,115 +1,213 @@
-h1 {
-    text-align: center;
-}
+ body {
+            background-color: rgb(254, 254, 254);
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-header {
-    text-align: center;
-    font-size: 13px;
+        h1 {
+            text-align: center;
+        }
 
+        header {
+            text-align: center;
+            font-size: 13px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            margin-bottom: 20px;
+        }
 
+        h2 {
+            margin-top: 30px;
+        }
 
-}
+        h3 {
+            text-align: center;
+            font-size: 20px;
+        }
 
-h3 {
-    text-align: center;
-    font-size: 20px;
+        h4 {
+            text-align: center;
+            font-size: 25px;
+        }
 
-}
+        p {
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.5;
+        }
 
-img {
-    width: 230px;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-}
+        .text-highlight {
+            color: #333;
+           
+        }
 
-p {
-    text-align: center;
-    font-size: 20px;
-}
+       
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
 
-h4 {
-    text-align: center;
-    font-size: 25px;
-}
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.2s ease;
+        }
 
-h5 {
-    font-size: 27px;
-}
+        nav a:hover {
+            color: aqua;
+        }
 
-h6 {
-    text-align: right;
-    font-size: 27px;
-}
+        section {
+            width: 95%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
 
-article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 45%;
-    background-color: rgb(163, 151, 151);
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-.conteiner {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.conteiner div {
-    width: 40%;
-}
-
-.conteiner img {
-    width: 40%;
-    border: 3px solid black;
-    border-radius: 10%;
-}
-
-.buttom {
-    text-decoration: none;
-    background-color: aqua;
-    border-radius: 10px;
-    padding: 10px;
-    color: black;
-    margin-top: 10px;
-}
-
-section {
-    width: 90%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-body {
-    background-color: rgb(254, 254, 254);
-}
-
-.text {
-    color: rgb(252, 248, 248);
-}
-
-nav,
-a {
-    justify-content: center;
-    text-decoration: none;
-    color: black;
-    font-size: 110%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15%;
-    transition: all 0.2s ease;
-}
+        article {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 45%;
+            min-width: 300px;
+            background-color: rgb(163, 151, 151);
+            border-radius: 10px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
 
 
-nav a:hover {
-    left: 0;
+        .product-row {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
 
-}
+     .product-info {
+            width: 55%;
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        .product-info p {
+            text-align: left;
+            margin: 10px 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+
+        .product-img {
+            width: 40%;
+            border: 3px solid black;
+            border-radius: 10px;
+            object-fit: cover;
+            aspect-ratio: 1 / 1;
+
+        }
+
+
+        .buttons-row {
+            justify-content: space-around;
+        }
+
+        .button {
+            text-decoration: none;
+            background-color: aqua;
+            border-radius: 10px;
+            padding: 10px 20px;
+            color: black;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #00ced1;
+        }
+
+        .slider {
+            position: relative;
+            width: 40%;
+            aspect-ratio: 1 / 1;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            border-radius: 10px;
+            border: 3px solid black;
+        }
+
+        .slider input[name="switch"] {
+            display: none;
+        }
+
+        .slides {
+            display: flex;
+            width: 1000%;
+            height: 100%;
+            transition: margin-left 0.6s ease;
+        }
+
+        .slide {
+            width: 10%;
+            height: 100%;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .switch {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 5px;
+        }
+
+        .switch label {
+            width: 8px;
+            height: 8px;
+            cursor: pointer;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            border: 1px solid #333;
+        }
+
+        #btn1:checked~.slides { margin-left: 0; }
+        #btn2:checked~.slides { margin-left: -100%; }
+        #btn3:checked~.slides { margin-left: -200%; }
+        #btn4:checked~.slides { margin-left: -300%; }
+        #btn5:checked~.slides { margin-left: -400%; }
+        #btn6:checked~.slides { margin-left: -500%; }
+        #btn7:checked~.slides { margin-left: -600%; }
+        #btn8:checked~.slides { margin-left: -700%; }
+        #btn9:checked~.slides { margin-left: -800%; }
+        #btn10:checked~.slides { margin-left: -900%; }
+
+        #btn1:checked~.switch label[for="btn1"],
+        #btn2:checked~.switch label[for="btn2"],
+        #btn3:checked~.switch label[for="btn3"],
+        #btn4:checked~.switch label[for="btn4"],
+        #btn5:checked~.switch label[for="btn5"],
+        #btn6:checked~.switch label[for="btn6"],
+        #btn7:checked~.switch label[for="btn7"],
+        #btn8:checked~.switch label[for="btn8"],
+        #btn9:checked~.switch label[for="btn9"],
+        #btn10:checked~.switch label[for="btn10"] {
+            background-color: aqua;
+            transform: scale(1.2);
+        }
